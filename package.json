@@ -13,7 +13,7 @@
   "scripts": {
     "test": "mocha --compilers js:babel-core/register --recursive",
     "test-cov": "babel-node isparta cover --report html --report text node_modules/.bin/_mocha",
-    "build": "babel src --out-dir build",
+    "build": "rollup -c rollup.config.js  --environment INCLUDE_DEPS,BUILD:production && babel rollup --out-dir build",
     "clean": "rm -rf build",
     "lint": "eslint src test"
   },
