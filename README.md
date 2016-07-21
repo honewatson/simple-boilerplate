@@ -31,3 +31,5 @@ npm install babel-npm-boilerplate --save
 ## Liscense
 
 MIT
+
+* cp files to

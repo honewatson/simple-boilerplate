@@ -59,8 +59,9 @@ export default {
             //namedExports: {'./module.js': ['foo', 'bar']}  // Default: undefined
         }),
         babel(babelrc()),
+        uglify()
     ],
     format: 'cjs',
-    dest: 'src/index.rolled.js',
+    dest: 'dist/bundle.rolled.min.js',
 
 };
