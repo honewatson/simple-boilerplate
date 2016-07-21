@@ -25,6 +25,7 @@
     "lodash.pick": "^4.2.1"
   },
   "devDependencies": {
+    "autoprefixer": "^6.3.7",
     "babel-core": "^6.5.2",
     "babel-eslint": "^5.0.0",
     "babel-loader": "^6.2.4",
@@ -35,6 +36,7 @@
     "babel-register": "^6.9.0",
     "babelrc-rollup": "^2.0.0",
     "chai": "^3.5.0",
+    "css-loader": "^0.23.1",
     "eslint": "^2.13.1",
     "eslint-config-airbnb": "^6.0.1",
     "eslint-plugin-react": "^4.0.0",
@@ -43,12 +45,15 @@
     "isparta": "^4.0.0",
     "mocha": "^2.4.5",
     "node-sass": "^3.8.0",
+    "postcss-loader": "^0.9.1",
     "rollup-plugin-babel": "^2.6.1",
     "rollup-plugin-commonjs": "^3.3.0",
     "rollup-plugin-multi-entry": "^2.0.0",
     "rollup-plugin-node-resolve": "^1.7.1",
     "rollup-plugin-uglify": "^1.0.1",
+    "sass-loader": "^4.0.0",
     "semantic-release": "^4.3.5",
+    "style-loader": "^0.13.1",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1",
     "webpack-shell-plugin": "^0.4.2"

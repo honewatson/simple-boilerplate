@@ -1,8 +1,10 @@
+
 body {
     font-family: Arial;
-    .root {
-        color: red;
-        background: #ccc;
-
+    #root {
+        color: #ff0000;
+        background: #00ffd7;
     }
 }
+
+@import 'headers.scss';
