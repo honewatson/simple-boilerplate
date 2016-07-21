@@ -5,7 +5,7 @@ var port = '3031';
 
 module.exports = {
     devtool: 'eval',
-    entry: './src/index.rolled',
+    entry: './src/index.rolled.js',
     output: {
         path: path.join(__dirname, 'dist'),
         filename: 'bundle.webpack.min.js',
