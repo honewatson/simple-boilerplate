@@ -1,5 +1,5 @@
 {
-  "name": "babel-npm-boilerplate",
+  "name": "simple-boilerplate",
   "author": "Hone Watson",
   "version": "0.2.0",
   "description": "A Boilerplate for creating NPM packages using Babel, ESLint, Mocha and Chai",
@@ -60,11 +60,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/honewatson/babel-npm-boilerplate.git"
+    "url": "git+https://github.com/honewatson/simple-boilerplate.git"
   },
   "bugs": {
-    "url": "https://github.com/honewatson/babel-npm-boilerplate/issues"
+    "url": "https://github.com/honewatson/simple-boilerplate/issues"
   },
-  "homepage": "https://github.com/honewatson/babel-npm-boilerplate#readme",
+  "homepage": "https://github.com/honewatson/simple-boilerplate#readme",
   "license": "MIT"
 }
