@@ -1,7 +1,6 @@
-# babel-npm-boilerplate [![Build Status](https://travis-ci.org/honewatson/babel-npm-boilerplate.svg)](https://travis-ci.org/honewatson/babel-npm-boilerplate) [![npm version](https://badge.fury.io/js/babel-npm-boilerplate.svg)](http://badge.fury.io/js/babel-npm-boilerplate)
+# Simple Boilerplate
 
 A Boilerplate for creating NPM packages using Babel, ESLint, Mocha and Chai
-
 
 ## What's inside
 
@@ -14,11 +13,7 @@ Minimal structure for a npm package source.
 
 ## Installation
 
-Clone this repo or download using `npm`
-
-```
-npm install babel-npm-boilerplate --save
-```
+cookiecutter https://github.com/honewatson/simple-boilerplate.git
 
 ## Usage
 
@@ -32,4 +27,3 @@ npm install babel-npm-boilerplate --save
 
 MIT
 
-* cp files to
