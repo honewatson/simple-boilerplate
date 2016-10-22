@@ -15,7 +15,7 @@
     "test-cov": "babel-node isparta cover --report html --report text node_modules/.bin/_mocha",
     "webpack-production": "webpack --progress -p --config webpack.production.config.js",
     "rollup-production": "rollup -c rollup.production.config.js --environment INCLUDE_DEPS,BUILD:production",
-    "server": "node ./server.js",
+    "server": "webpack-dashboard -c magenta -- node server.js",
     "clean": "rm -rf build",
     "flow": "flow check",
     "pretest": "npm run flow && npm run build",
