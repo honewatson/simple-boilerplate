@@ -21,7 +21,11 @@
     "pretest": "npm run flow && npm run build",
     "lint": "eslint src test"
   },
-  "dependencies": {},
+  "dependencies": {
+    "immute.js": "^0.1.0",
+    "qwest": "^4.4.5",
+    "slim-router": "^1.1.0"
+  },
   "devDependencies": {
     "autoprefixer": "^6.5.0",
     "babel-core": "^6.17.0",
