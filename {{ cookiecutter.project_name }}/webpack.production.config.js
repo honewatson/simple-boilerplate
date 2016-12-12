@@ -2,6 +2,8 @@ var path = require('path');
 var webpack = require('webpack');
 var WebpackShellPlugin = require('webpack-shell-plugin');
 var port = '3031';
+var utils = require('./utils');
+
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const sassLoaders = [
     'css-loader',
@@ -9,11 +11,12 @@ const sassLoaders = [
     'sass-loader?includePaths[]=' + path.resolve(__dirname, './src')
 ]
 
+
 module.exports = {
     entry: [
         './src/index.js',
         './src/stylesheets/scss.js'
-    ],
+    ].concat(utils.getAllFilesFromFolder(__dirname + "/html")),
     output: {
         path: path.join(__dirname, 'dist'),
         filename: 'bundle.webpack.min.js',
@@ -44,6 +47,14 @@ module.exports = {
         {
             test: /\.scss$/,
             loader: ExtractTextPlugin.extract('style-loader', sassLoaders.join('!'))
+        },
+        {
+            test: /\.html$/,
+            loaders: [
+                "file-loader?name=[name].[ext]",
+                "extract-loader",
+                "template-html-loader?engine=nunjucks"
+            ]
         }
         ]
     },

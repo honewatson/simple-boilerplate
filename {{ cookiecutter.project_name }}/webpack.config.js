@@ -50,6 +50,14 @@ module.exports = {
             {
                 test: /\.scss$/,
                 loader: ExtractTextPlugin.extract('style-loader', sassLoaders.join('!'))
+            },
+            {
+                test: /\.html$/,
+                loaders: [
+                    "file-loader?name=[name].[ext]",
+                    "extract-loader",
+                    "template-html-loader?engine=nunjucks"
+                ]
             }
         ]
     },
