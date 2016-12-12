@@ -13,9 +13,9 @@
   "scripts": {
     "test": "mocha --compilers js:babel-core/register --recursive",
     "test-cov": "babel-node isparta cover --report html --report text node_modules/.bin/_mocha",
-    "webpack-production": "webpack --progress -p --config webpack.production.config.js",
-    "rollup-production": "rollup -c rollup.production.config.js --environment INCLUDE_DEPS,BUILD:production",
-    "server": "webpack-dashboard -c magenta -- node server.js",
+    "webpack-production": "node_modules/webpack/bin/webpack.js --progress -p --config webpack.production.config.js",
+    "rollup-production": "node_modules/rollup/bin/rollup -c rollup.production.config.js --environment INCLUDE_DEPS,BUILD:production",
+    "server": "node_modules/webpack-dashboard/bin/webpack-dashboard.js -c magenta -- node server.js",
     "clean": "rm -rf build",
     "flow": "flow check",
     "pretest": "npm run flow && npm run build",

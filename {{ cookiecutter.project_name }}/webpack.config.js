@@ -2,7 +2,7 @@ var path = require('path');
 var webpack = require('webpack');
 var WebpackShellPlugin = require('webpack-shell-plugin');
 var DashboardPlugin = require('webpack-dashboard/plugin');
-
+var utils = require('./utils');
 const autoprefixer = require('autoprefixer')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
@@ -21,7 +21,7 @@ module.exports = {
         'webpack/hot/only-dev-server',
         './src/index.js',
         './src/stylesheets/scss.js'
-    ],
+    ].concat(utils.getAllFilesFromFolder(__dirname + "/html")),
     output: {
         path: path.join(__dirname, 'dist'),
         filename: 'bundle.webpack.js',

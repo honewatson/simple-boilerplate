@@ -9,7 +9,7 @@ var getAllFilesFromFolder = function(dir) {
         var stat = filesystem.statSync(file);
 
         if (stat && stat.isDirectory()) {
-            results = results.concat(_getAllFilesFromFolder(file))
+            results = results.concat(getAllFilesFromFolder(file))
         } else results.push(file);
 
     });
