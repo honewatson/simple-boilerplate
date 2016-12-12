@@ -1,6 +1,7 @@
 var path = require('path');
 var webpack = require('webpack');
 var WebpackShellPlugin = require('webpack-shell-plugin');
+var DashboardPlugin = require('webpack-dashboard/plugin');
 
 const autoprefixer = require('autoprefixer')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
@@ -37,7 +38,8 @@ module.exports = {
             }
         ),
         new webpack.HotModuleReplacementPlugin(),
-        new ExtractTextPlugin('main.css')
+        new ExtractTextPlugin('main.css'),
+        new DashboardPlugin()
     ],
     module: {
         loaders: [
