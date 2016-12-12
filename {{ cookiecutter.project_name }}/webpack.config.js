@@ -31,7 +31,6 @@ module.exports = {
         new WebpackShellPlugin(
             {
                 onBuildStart: [
-                    'rollup -c',
                     'node_modules/node-sass/bin/node-sass src/stylesheets/base.scss ./dist/main.css'
                 ],
                 onBuildEnd: []
