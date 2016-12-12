@@ -14,7 +14,9 @@ var getAllFilesFromFolder = function(dir) {
 
     });
 
-    return results;
+    return results.filter(function(item) {
+        return !item.match(/partial/);
+    });
 
 };
 
