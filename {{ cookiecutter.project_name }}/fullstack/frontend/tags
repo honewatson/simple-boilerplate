@@ -1,0 +1,23 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+WebpackDevServer	server.js	/^var WebpackDevServer = require('webpack-dev-server');$/;"	v
+WebpackShellPlugin	webpack.config.js	/^var WebpackShellPlugin = require('webpack-shell-plugin');$/;"	v
+WebpackShellPlugin	webpack.production.config.js	/^var WebpackShellPlugin = require('webpack-shell-plugin');$/;"	v
+_classCallCheck	build/index.js	/^function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }$/;"	f
+config	server.js	/^var config = require('.\/webpack.config');$/;"	v
+devtool	webpack.config.js	/^module.exports = {$/;"	p	class:module.exports
+devtool	webpack.production.config.js	/^module.exports = {$/;"	p	class:module.exports
+entry	webpack.config.js	/^    devtool: 'eval',$/;"	p	class:module.exports
+entry	webpack.production.config.js	/^    devtool: 'eval',$/;"	p	class:module.exports
+output	webpack.production.config.js	/^    entry: '.\/src\/index.rolled.js',$/;"	p	class:module.exports
+path	webpack.config.js	/^var path = require('path');$/;"	v
+path	webpack.production.config.js	/^var path = require('path');$/;"	v
+port	webpack.production.config.js	/^var port = '3031';$/;"	v
+user	src/app/user.js	/^const obj = { 'user': handler() + ' fred', 'age': 40 };$/;"	p	class:const
+webpack	server.js	/^var webpack = require('webpack');$/;"	v
+webpack	webpack.config.js	/^var webpack = require('webpack');$/;"	v
+webpack	webpack.production.config.js	/^var webpack = require('webpack');$/;"	v

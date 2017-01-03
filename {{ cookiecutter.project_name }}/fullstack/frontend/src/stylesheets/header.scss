@@ -1,0 +1,24 @@
+header {
+    h1 {
+        margin: 10px;
+    }
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.main__horizontal_nav {
+    position: relative;
+    .nav__main {
+        width: 200px;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 0;
+    }
+    li {
+        width: 200px;
+    }
+    a {
+        width: 100%;
+    }
+}

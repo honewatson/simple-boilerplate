@@ -1,0 +1,66 @@
+#main  {
+    width: 968px;
+    float: left;
+}
+#aside {
+    width: 400px;
+    float: left;
+}
+
+.cb {
+    clear: both;
+}
+
+.ql-editor {
+    padding: 15px 15px 50px;
+    background: #fff8fe;
+    width: 100%;
+}
+
+.ql-toolbar {
+    margin: 10px 0 0;
+}
+
+.input-field {
+    margin: 10px 0;
+}
+
+.input-field.ql-snow {
+    margin-top: 0;
+}
+
+.alert-wrap label {
+    font-size: $font-small;
+}
+
+.margin-top-bottom-0 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+div.checkbox, div.radio {
+    ul {
+        margin-left: 0;
+    }
+    li {
+        clear: both;
+        padding: 10px 0;
+    }
+    label {
+        margin-left: 5px;
+        float: left;
+    }
+    input {
+        float: left;
+    }
+}
+
+#main__content, #messages {
+
+    padding-left: 30px;
+    & .g--9 {
+        margin-top: 0;
+        position: relative;
+
+    }
+}
